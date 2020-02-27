@@ -136,9 +136,9 @@
             this.O.AutoSize = true;
             this.O.Location = new System.Drawing.Point(474, 117);
             this.O.Name = "O";
-            this.O.Size = new System.Drawing.Size(46, 13);
+            this.O.Size = new System.Drawing.Size(73, 13);
             this.O.TabIndex = 9;
-            this.O.Text = "O Turn: ";
+            this.O.Text = "O Turn: NOW";
             this.O.Click += new System.EventHandler(this.label1_Click);
             // 
             // X
@@ -146,9 +146,9 @@
             this.X.AutoSize = true;
             this.X.Location = new System.Drawing.Point(475, 174);
             this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(45, 13);
+            this.X.Size = new System.Drawing.Size(72, 13);
             this.X.TabIndex = 10;
-            this.X.Text = "X Turn: ";
+            this.X.Text = "X Turn: NOW";
             this.X.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1

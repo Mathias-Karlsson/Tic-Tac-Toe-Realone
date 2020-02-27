@@ -17,6 +17,28 @@ namespace Tic_Tac_Toe_Realone
             InitializeComponent();
         }
 
+        private void click(object sender)
+        {
+            if (sender is Button)
+            {
+                Button button = sender as Button;
+                if (O.Visible)
+                {
+                    button.Text = "O";
+                    button.Enabled = false;
+                    O.Visible = false;
+                    X.Visible = true;
+                }
+                else
+                {
+                    button.Text = "X";
+                    button.Enabled = false;
+                    X.Visible = false;
+                    O.Visible = true;
+                }
+            }
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -29,60 +51,47 @@ namespace Tic_Tac_Toe_Realone
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (sender is Button)
-            {
-                Button button = sender as Button;
-                if (O is )
-                {
-                    button.Text = "O";
-                    Enabled = false;
-                }
-                else
-                {
-                    button.Text = "X";
-                    Enabled = false;
-                }
-            }
+            click(sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            click(sender);
         }
     }
 }
