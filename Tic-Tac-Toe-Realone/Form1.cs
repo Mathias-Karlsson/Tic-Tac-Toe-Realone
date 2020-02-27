@@ -29,7 +29,20 @@ namespace Tic_Tac_Toe_Realone
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (sender is Button)
+            {
+                Button button = sender as Button;
+                if (O is )
+                {
+                    button.Text = "O";
+                    Enabled = false;
+                }
+                else
+                {
+                    button.Text = "X";
+                    Enabled = false;
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
