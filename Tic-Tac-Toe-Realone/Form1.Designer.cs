@@ -39,6 +39,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.O = new System.Windows.Forms.Label();
             this.X = new System.Windows.Forms.Label();
+            this.Owin = new System.Windows.Forms.Label();
+            this.Xwin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -151,11 +153,35 @@
             this.X.Text = "X Turn: NOW";
             this.X.Click += new System.EventHandler(this.label2_Click);
             // 
+            // Owin
+            // 
+            this.Owin.AutoSize = true;
+            this.Owin.Location = new System.Drawing.Point(474, 147);
+            this.Owin.Name = "Owin";
+            this.Owin.Size = new System.Drawing.Size(47, 13);
+            this.Owin.TabIndex = 11;
+            this.Owin.Text = "O WINS";
+            this.Owin.Visible = false;
+            this.Owin.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // Xwin
+            // 
+            this.Xwin.AutoSize = true;
+            this.Xwin.Location = new System.Drawing.Point(475, 206);
+            this.Xwin.Name = "Xwin";
+            this.Xwin.Size = new System.Drawing.Size(46, 13);
+            this.Xwin.TabIndex = 12;
+            this.Xwin.Text = "X WINS";
+            this.Xwin.Visible = false;
+            this.Xwin.Click += new System.EventHandler(this.label2_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 285);
+            this.Controls.Add(this.Xwin);
+            this.Controls.Add(this.Owin);
             this.Controls.Add(this.X);
             this.Controls.Add(this.O);
             this.Controls.Add(this.button9);
@@ -187,6 +213,8 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label O;
         private System.Windows.Forms.Label X;
+        private System.Windows.Forms.Label Owin;
+        private System.Windows.Forms.Label Xwin;
     }
 }
 

@@ -37,6 +37,30 @@ namespace Tic_Tac_Toe_Realone
                     O.Visible = true;
                 }
             }
+            checkifwin();
+        }
+
+        public void checkifwin()
+        {
+            if ((button1.Text == button2.Text && button2.Text == button3.Text && (button1.Text == "X" || button1.Text == "O")) ||
+                (button4.Text == button5.Text && button5.Text == button6.Text && (button4.Text == "X" || button4.Text == "O")) || 
+                (button7.Text == button8.Text && button8.Text == button9.Text && (button7.Text == "X" || button7.Text == "O")) || 
+                (button1.Text == button4.Text && button4.Text == button7.Text && (button1.Text == "X" || button1.Text == "O")) || 
+                (button2.Text == button5.Text && button5.Text == button8.Text && (button2.Text == "X" || button2.Text == "O")) || 
+                (button3.Text == button6.Text && button6.Text == button9.Text && (button3.Text == "X" || button3.Text == "O")) || 
+                (button1.Text == button5.Text && button5.Text == button9.Text && (button1.Text == "X" || button1.Text == "O")) || 
+                (button3.Text == button5.Text && button5.Text == button7.Text && (button3.Text == "X" || button3.Text == "O")))
+            {
+                if (O.Visible == false)
+                {
+                    Owin.Visible = true;
+                }
+                else
+                {
+                    Xwin.Visible = true;
+                }
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -92,6 +116,16 @@ namespace Tic_Tac_Toe_Realone
         private void button9_Click(object sender, EventArgs e)
         {
             click(sender);
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
