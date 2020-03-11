@@ -151,6 +151,7 @@
             this.X.Size = new System.Drawing.Size(72, 13);
             this.X.TabIndex = 10;
             this.X.Text = "X Turn: NOW";
+            this.X.Visible = false;
             this.X.Click += new System.EventHandler(this.label2_Click);
             // 
             // Owin
