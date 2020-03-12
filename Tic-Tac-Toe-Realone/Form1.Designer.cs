@@ -41,6 +41,8 @@
             this.X = new System.Windows.Forms.Label();
             this.Owin = new System.Windows.Forms.Label();
             this.Xwin = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.Rules = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -176,11 +178,22 @@
             this.Xwin.Visible = false;
             this.Xwin.Click += new System.EventHandler(this.label2_Click_1);
             // 
+            // Rules
+            // 
+            this.Rules.Location = new System.Drawing.Point(562, 1);
+            this.Rules.Name = "Rules";
+            this.Rules.Size = new System.Drawing.Size(17, 20);
+            this.Rules.TabIndex = 13;
+            this.Rules.Text = "?";
+            this.Rules.UseVisualStyleBackColor = true;
+            this.Rules.Click += new System.EventHandler(this.Rules_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 285);
+            this.Controls.Add(this.Rules);
             this.Controls.Add(this.Xwin);
             this.Controls.Add(this.Owin);
             this.Controls.Add(this.X);
@@ -216,6 +229,8 @@
         private System.Windows.Forms.Label X;
         private System.Windows.Forms.Label Owin;
         private System.Windows.Forms.Label Xwin;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button Rules;
     }
 }
 

@@ -17,7 +17,7 @@ namespace Tic_Tac_Toe_Realone
             InitializeComponent();
         }
 
-        private void click(object sender)
+        private void click(object sender) /// Click kollar efter vems tur ar det och disablar en button nar nagon har klickat pa en button och lagger ett O eller X om det ar nagon av deras tur
         {
             if (sender is Button)
             {
@@ -37,10 +37,23 @@ namespace Tic_Tac_Toe_Realone
                     O.Visible = true;
                 }
             }
-            checkifwin();
+            if (checkifwin())
+            {
+                button1.Enabled = false;
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
+                O.Visible = false;
+                X.Visible = false;
+            }
         }
 
-        public void checkifwin()
+        public Boolean checkifwin() /// Den har koden kollar efter om O eller X har 3 i rad olika former
         {
             if ((button1.Text == button2.Text && button2.Text == button3.Text && (button1.Text == "X" || button1.Text == "O")) ||
                 (button4.Text == button5.Text && button5.Text == button6.Text && (button4.Text == "X" || button4.Text == "O")) || 
@@ -59,6 +72,11 @@ namespace Tic_Tac_Toe_Realone
                 {
                     Xwin.Visible = true;
                 }
+                return true;
+            }
+            else
+            {
+                return false;
             }
 
         }
@@ -123,9 +141,15 @@ namespace Tic_Tac_Toe_Realone
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e) 
         {
 
+        }
+
+        private void Rules_Click(object sender, EventArgs e) /// Rules visar upp en ny window som berattar vad reglerna galler i spelet
+        {
+            Rules window = new Rules();
+            window.Show();
         }
     }
 }
