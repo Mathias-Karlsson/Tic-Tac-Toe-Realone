@@ -48,9 +48,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(267, 13);
+            this.label2.Size = new System.Drawing.Size(411, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Rule 1: The person who gets 3 in a row wins the game!";
+            this.label2.Text = "Rule 1: The person who gets 3 in a row with the form of | or --- or / or \\ wins t" +
+    "he game!";
             // 
             // label3
             // 
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 189);
+            this.ClientSize = new System.Drawing.Size(427, 189);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
