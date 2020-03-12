@@ -81,69 +81,49 @@ namespace Tic_Tac_Toe_Realone
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) /// button1 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) /// button2 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) /// button3 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e) /// button4 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) /// button5 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e) /// button6 visar fram O eller X om det ar O eller X tur som klickar pa knappen       
         {
             click(sender);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e) /// button7 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e) /// button8 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e) /// button9 visar fram O eller X om det ar O eller X tur som klickar pa knappen
         {
             click(sender);
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e) 
-        {
-
         }
 
         private void Rules_Click(object sender, EventArgs e) /// Rules visar upp en ny window som berattar vad reglerna galler i spelet

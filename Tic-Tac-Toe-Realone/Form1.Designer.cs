@@ -143,7 +143,6 @@
             this.O.Size = new System.Drawing.Size(73, 13);
             this.O.TabIndex = 9;
             this.O.Text = "O Turn: NOW";
-            this.O.Click += new System.EventHandler(this.label1_Click);
             // 
             // X
             // 
@@ -154,7 +153,6 @@
             this.X.TabIndex = 10;
             this.X.Text = "X Turn: NOW";
             this.X.Visible = false;
-            this.X.Click += new System.EventHandler(this.label2_Click);
             // 
             // Owin
             // 
@@ -165,7 +163,6 @@
             this.Owin.TabIndex = 11;
             this.Owin.Text = "O WINS";
             this.Owin.Visible = false;
-            this.Owin.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Xwin
             // 
@@ -176,7 +173,6 @@
             this.Xwin.TabIndex = 12;
             this.Xwin.Text = "X WINS";
             this.Xwin.Visible = false;
-            this.Xwin.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // Rules
             // 
