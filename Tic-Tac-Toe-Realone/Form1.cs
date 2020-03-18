@@ -13,10 +13,14 @@ namespace Tic_Tac_Toe_Realone
 
 
     /// <summary>
-    /// 1. Vad har jag lärt mig?: Jag har lärt mig hur man ska koda program med olika svar. 
-    /// Button svar gällande om det är O eller X tur
-    /// 2. Vad har varit svårt?: Button svar när det är O eller X tur var någ det svåraste.
-    /// 3. Vad gick lätt?: Att lägga in reglerna var lättast.
+    /// 1. Vad har jag lärt mig?: 
+    /// Jag har lärt mig hur man ska koda program med olika svar. 
+    /// Button svar gällande om det är O eller X tur.
+    /// Hur man ska lägga till regler och manual i programmet.
+    /// 2. Vad har varit svårt?: 
+    /// Button svar när det är O eller X tur var någ det svåraste.
+    /// 3. Vad gick lätt?: 
+    /// Att lägga in reglerna var lättast.
     /// </summary>
     public partial class Form1 : Form
     {
