@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,8 @@ namespace Tic_Tac_Toe_Realone
     /// </summary>
     public partial class Form1 : Form
     {
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +34,11 @@ namespace Tic_Tac_Toe_Realone
 
         private void click(object sender) /// Click kollar efter vems tur ar det och disablar en button nar nagon har klickat pa en button och lagger ett O eller X om det ar nagon av deras tur
         {
+            string filepath = @"C:\test\";
+            string filename = @"matches.txt";
+
+            matches(filepath, filename);
+
             if (sender is Button)
             {
                 Button button = sender as Button;
@@ -79,6 +87,7 @@ namespace Tic_Tac_Toe_Realone
                 if (O.Visible == false)
                 {
                     Owin.Visible = true;
+                    
                 }
                 else
                 {
@@ -142,6 +151,28 @@ namespace Tic_Tac_Toe_Realone
         {
             Rules window = new Rules();
             window.Show();
+        }
+
+        public void matches(string filepath, string filename)
+        {
+            string f = filepath + filename;
+            if (File.Exists(f))
+            {
+                if (Owin.Visible == true || Xwin.Visible == true)
+                {
+
+                }
+            }
+            else
+            {
+                File.Create(f);
+            }
+
+            if (Directory.Exists(filepath) == false)
+            {
+                Directory.CreateDirectory(filepath);
+            }
+
         }
     }
 }
