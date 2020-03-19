@@ -37,7 +37,7 @@ namespace Tic_Tac_Toe_Realone
             string filepath = @"C:\test\";
             string filename = @"matches.txt";
 
-            matches(filepath, filename);
+            
 
             if (sender is Button)
             {
@@ -71,6 +71,7 @@ namespace Tic_Tac_Toe_Realone
                 O.Visible = false;
                 X.Visible = false;
             }
+            matches(filepath, filename);
         }
 
         public Boolean checkifwin() /// Den har koden kollar efter om O eller X har 3 i rad olika former
@@ -160,12 +161,30 @@ namespace Tic_Tac_Toe_Realone
             {
                 if (Owin.Visible == true || Xwin.Visible == true)
                 {
-
+                    if (Owin.Visible == true)
+                    {
+                        File.AppendAllText(f, "O wins " + Environment.NewLine);
+                    }
+                    else
+                    {
+                        File.AppendAllText(f, "X wins " + Environment.NewLine);
+                    }
                 }
             }
             else
             {
                 File.Create(f);
+                if (Owin.Visible == true || Xwin.Visible == true)
+                {
+                    if (Owin.Visible == true)
+                    {
+                        File.AppendAllText(f, "O wins");
+                    }
+                    else
+                    {
+                        File.AppendAllText(f, "X wins");
+                    }
+                }
             }
 
             if (Directory.Exists(filepath) == false)
