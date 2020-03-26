@@ -57,7 +57,7 @@ namespace Tic_Tac_Toe_Realone
                     O.Visible = true;
                 }
             }
-            if (checkifwin())
+            if (CheckIfWin())
             {
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -74,7 +74,7 @@ namespace Tic_Tac_Toe_Realone
             matches(filepath, filename);
         }
 
-        public Boolean checkifwin() /// Den har koden kollar efter om O eller X har 3 i rad olika former
+        public Boolean CheckIfWin() /// Den har koden kollar efter om O eller X har 3 i rad olika former
         {
             if ((button1.Text == button2.Text && button2.Text == button3.Text && (button1.Text == "X" || button1.Text == "O")) ||
                 (button4.Text == button5.Text && button5.Text == button6.Text && (button4.Text == "X" || button4.Text == "O")) || 
